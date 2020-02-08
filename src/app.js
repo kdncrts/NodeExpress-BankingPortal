@@ -36,7 +36,7 @@ app.get('/savings', (req, res) => {
     res.render(
         'account', 
         {
-            account: accounts.savings
+            accounts: accounts.savings
         }
     );
 });
@@ -45,7 +45,7 @@ app.get('/checking', (req, res) => {
     res.render(
         'account', 
         {
-            account: accounts.checking
+            accounts: accounts.checking
         }
     );
 });
@@ -54,7 +54,7 @@ app.get('/credit', (req, res) => {
     res.render(
         'account', 
         {
-            account: accounts.credit
+            accounts: accounts.credit
         }
     );
 });
@@ -91,7 +91,7 @@ app.get('/payment', (req, res) => {
     res.render(
         'payment',
         {
-            account: accounts.credit
+            accounts: accounts.credit
         }
     );
 });
@@ -105,7 +105,7 @@ app.post('/payment', (req, res) => {
         'payment',
         {
             message: "Payment Succesful",
-            account: accounts.credit
+            accounts: accounts.credit
         }
     );
 });
